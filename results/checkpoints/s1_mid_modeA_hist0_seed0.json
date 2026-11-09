@@ -1,0 +1,20 @@
+{
+  "illegal_level": "mid",
+  "mode": "A",
+  "use_history": false,
+  "history": false,
+  "seed": 0,
+  "obs_dim": 60,
+  "act_dim": 2,
+  "history_extra": 0,
+  "deploy_margin": 0.14,
+  "demo_margin": 0.04,
+  "env_id": "SafetyPointGoal1-v0",
+  "tag": "A_nohist",
+  "train_mse": 0.004501272484453188,
+  "val_mse": 0.008321520872414112,
+  "n_train": 2110,
+  "n_val": 431,
+  "epochs": 60.0,
+  "hidden": 128
+}

@@ -1,0 +1,32 @@
+env_id: "SafetyPointGoal1-v0"
+deploy_margin: 0.14
+oracle_margin: 0.04
+n_eval: 20
+max_steps: 500
+stuck_horizon: 40
+device: cpu
+seed: 7
+assist_budget: 80
+max_interventions_per_episode: 3
+# Freeze deploy + escape-capable oracle execution (evaluate_flexible).
+# With our rebuilt escape baseline, escape_mode:true leaves none≈solved so
+# V1–V4 never fire; freeze is the regime where hold-n / V3b matter.
+escape_mode: false
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+policy_seed: 0
+n_demos: 40
+train_epochs: 60
+variants:
+  - {name: none}
+  - {name: V1}
+  - {name: V2, v2_n: 10}
+  - {name: V3a, v3_agree_tol: 0.35, v3_max_steps: 40}
+  - {name: V3b, v3_disagree_tol: 0.45, v3_max_steps: 40}
+  - {name: V4, v4_horizon: 20}
+smoke_n_eval: 4
+policies:
+  - {illegal_level: mid, mode: A, use_history: false, tag: A_nohist}
+  - {illegal_level: mid, mode: B, use_history: true, tag: B_hist}
+  - {illegal_level: mid, mode: C, use_history: false, tag: C_nohist}
+  - {illegal_level: mid, mode: C, use_history: true, tag: C_hist}

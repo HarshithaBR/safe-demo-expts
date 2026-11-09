@@ -1,0 +1,19 @@
+# S1 SafetyPointGoal1 experiment matrix
+env_id: "SafetyPointGoal1-v0"
+deploy_margin: 0.14
+n_demos: 40
+n_eval: 20
+max_steps: 500
+epochs: 60
+batch_size: 256
+lr: 0.001
+device: cpu
+stuck_horizon: 40
+val_frac: 0.2
+seeds: [0]
+illegal_levels: ["low", "mid", "high"]
+modes: ["A", "B", "C"]   # A=filter-first, B=train-then-constrain, C=projected labels
+history_options: [false, true]
+escape_mode: true
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"

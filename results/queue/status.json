@@ -1,0 +1,46 @@
+{
+  "steps": {
+    "1": {
+      "state": "failed",
+      "detail": "exit=1 log=/home/ubuntu/Documents/IRL/project/results/queue/step1_a1c_C_hist.log",
+      "at": "2026-11-09T18:34:42.530946Z"
+    },
+    "2": {
+      "state": "done",
+      "detail": "results/s1_query_escape_gate_C_hist.json",
+      "at": "2026-11-09T18:43:46.933166Z"
+    },
+    "3": {
+      "state": "done",
+      "detail": "results/s1_paper_bakeoff_C_hist.json",
+      "at": "2026-11-09T18:54:41.836670Z"
+    },
+    "4": {
+      "state": "failed",
+      "detail": "exit=1 log=/home/ubuntu/Documents/IRL/project/results/queue/step4_a1c_C_nohist.log",
+      "at": "2026-11-09T18:58:46.769825Z"
+    },
+    "5": {
+      "state": "done",
+      "detail": "results/s1_geometry_suite.json",
+      "at": "2026-11-09T19:12:28.024372Z"
+    },
+    "6": {
+      "state": "done",
+      "detail": "results/s1_ablations_done.flag",
+      "at": "2026-11-09T21:27:29.573363Z"
+    },
+    "7": {
+      "state": "failed",
+      "detail": "exit=1 log=/home/ubuntu/Documents/IRL/project/results/queue/step7_tabletop_harden.log",
+      "at": "2026-11-09T21:27:31.350073Z"
+    },
+    "0": {
+      "state": "queue_complete",
+      "detail": "all requested steps finished",
+      "at": "2026-11-09T21:27:31.366351Z"
+    }
+  },
+  "updated_at": "2026-11-09T21:27:31.366351Z",
+  "current_step": 0
+}

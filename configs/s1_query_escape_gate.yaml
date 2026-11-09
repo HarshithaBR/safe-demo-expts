@@ -1,0 +1,37 @@
+env_id: "SafetyPointGoal1-v0"
+deploy_margin: 0.14
+oracle_margin: 0.04
+device: cpu
+stuck_horizon: 40
+max_steps: 500
+seeds: [7, 77, 177]
+n_eval: 20
+label_episodes: 40
+label_seed_base: 11
+assist_variant: V3b
+assist_budget: 40
+max_interventions_per_episode: 5
+v3_disagree_tol: 0.45
+v3_max_steps: 40
+escape_try_steps: 30
+fail_threshold: 0.55
+escape_shield: escape
+mpc_horizon: 3
+mpc_samples: 20
+gate_epochs: 50
+gate_lr: 0.01
+gate_hidden: 32
+artifact_dir: "results/query_escape_gate"
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+policy_seed: 0
+n_demos: 40
+train_epochs: 60
+modes: [escape_always, oracle_always, try_escape_then_query, learned]
+smoke_n_eval: 8
+smoke_label_episodes: 16
+smoke_gate_epochs: 30
+policies:
+  - {illegal_level: mid, mode: A, use_history: false, tag: A_nohist}
+  - {illegal_level: mid, mode: C, use_history: false, tag: C_nohist}
+  - {illegal_level: mid, mode: C, use_history: true, tag: C_hist}

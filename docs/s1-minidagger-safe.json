@@ -1,0 +1,124 @@
+{
+  "results": [
+    {
+      "tag": "A_nohist",
+      "n_oracle": 900,
+      "base_auto": {
+        "success_rate": 0.65,
+        "ever_stuck_rate": 0.35,
+        "terminal_stuck_rate": 0.35,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.65,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.06193717064164881,
+        "mean_episode_cost": 0.0,
+        "mean_length": 78.55,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "ft_auto": {
+        "success_rate": 0.1,
+        "ever_stuck_rate": 0.6,
+        "terminal_stuck_rate": 0.6,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.1,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.04734067382547606,
+        "mean_episode_cost": 0.0,
+        "mean_length": 194.9,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "ft_stats": {
+        "ft_train_mse": 0.3366766944527626,
+        "ft_epochs": 10.0,
+        "ft_n": 900.0
+      },
+      "base_assist_collect_succ": 0.675
+    },
+    {
+      "tag": "C_nohist",
+      "n_oracle": 593,
+      "base_auto": {
+        "success_rate": 0.35,
+        "ever_stuck_rate": 0.6,
+        "terminal_stuck_rate": 0.6,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.35,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.05996166804581391,
+        "mean_episode_cost": 0.0,
+        "mean_length": 99.75,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "ft_auto": {
+        "success_rate": 0.25,
+        "ever_stuck_rate": 0.55,
+        "terminal_stuck_rate": 0.55,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.25,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.05443373167801825,
+        "mean_episode_cost": 0.0,
+        "mean_length": 157.45,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "ft_stats": {
+        "ft_train_mse": 0.3350164294242859,
+        "ft_epochs": 10.0,
+        "ft_n": 593.0
+      },
+      "base_assist_collect_succ": 0.625
+    },
+    {
+      "tag": "C_hist",
+      "n_oracle": 712,
+      "base_auto": {
+        "success_rate": 0.5,
+        "ever_stuck_rate": 0.5,
+        "terminal_stuck_rate": 0.5,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.5,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.05338601530048759,
+        "mean_episode_cost": 0.0,
+        "mean_length": 76.25,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "ft_auto": {
+        "success_rate": 0.25,
+        "ever_stuck_rate": 0.55,
+        "terminal_stuck_rate": 0.55,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.25,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.06011910334646894,
+        "mean_episode_cost": 0.0,
+        "mean_length": 179.5,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "ft_stats": {
+        "ft_train_mse": 0.08481501042842865,
+        "ft_epochs": 10.0,
+        "ft_n": 712.0
+      },
+      "base_assist_collect_succ": 0.625
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "config": {
+    "env_id": "SafetyPointGoal1-v0",
+    "deploy_margin": 0.14,
+    "oracle_margin": 0.04,
+    "n_eval": 4,
+    "max_steps": 500,
+    "stuck_horizon": 40,
+    "device": "cpu",
+    "seed": 7,
+    "assist_budget": 80,
+    "max_interventions_per_episode": 3,
+    "escape_mode": true,
+    "demo_dir": "data/demos",
+    "checkpoint_dir": "results/checkpoints",
+    "policy_seed": 0,
+    "n_demos": 40,
+    "train_epochs": 60,
+    "variants": [
+      {
+        "name": "none"
+      },
+      {
+        "name": "V1"
+      },
+      {
+        "name": "V2",
+        "v2_n": 10
+      },
+      {
+        "name": "V3a",
+        "v3_agree_tol": 0.35,
+        "v3_max_steps": 40
+      },
+      {
+        "name": "V3b",
+        "v3_disagree_tol": 0.45,
+        "v3_max_steps": 40
+      },
+      {
+        "name": "V4",
+        "v4_horizon": 20
+      }
+    ],
+    "smoke_n_eval": 4,
+    "policies": [
+      {
+        "illegal_level": "mid",
+        "mode": "A",
+        "use_history": false,
+        "tag": "A_nohist"
+      },
+      {
+        "illegal_level": "mid",
+        "mode": "B",
+        "use_history": true,
+        "tag": "B_hist"
+      },
+      {
+        "illegal_level": "mid",
+        "mode": "C",
+        "use_history": false,
+        "tag": "C_nohist"
+      },
+      {
+        "illegal_level": "mid",
+        "mode": "C",
+        "use_history": true,
+        "tag": "C_hist"
+      }
+    ],
+    "seeds": [
+      7
+    ]
+  },
+  "results": [
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "illegal_level": "mid",
+      "variant": "none",
+      "success_rate": 1.0,
+      "ever_stuck_rate": 0.0,
+      "terminal_stuck_rate": 0.0,
+      "assisted_success_rate": 0.0,
+      "unassisted_success_rate": 1.0,
+      "mean_oracle_actions": 0.0,
+      "mean_interventions": 0.0,
+      "mean_reject_rate": 0.22008856682769726,
+      "mean_episode_cost": 21.5,
+      "mean_length": 96.0,
+      "n_episodes": 4.0,
+      "budget": 0.0
+    },
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "illegal_level": "mid",
+      "variant": "V1",
+      "success_rate": 0.5,
+      "ever_stuck_rate": 0.5,
+      "terminal_stuck_rate": 0.5,
+      "assisted_success_rate": 0.0,
+      "unassisted_success_rate": 0.5,
+      "mean_oracle_actions": 1.5,
+      "mean_interventions": 1.5,
+      "mean_reject_rate": 0.06527777777777777,
+      "mean_episode_cost": 0.0,
+      "mean_length": 59.75,
+      "n_episodes": 4.0,
+      "budget": 80.0
+    },
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "illegal_level": "mid",
+      "variant": "V2",
+      "success_rate": 0.5,
+      "ever_stuck_rate": 0.5,
+      "terminal_stuck_rate": 0.5,
+      "assisted_success_rate": 0.0,
+      "unassisted_success_rate": 0.5,
+      "mean_oracle_actions": 15.0,
+      "mean_interventions": 1.5,
+      "mean_reject_rate": 0.19183211424590735,
+      "mean_episode_cost": 11.75,
+      "mean_length": 73.25,
+      "n_episodes": 4.0,
+      "budget": 80.0
+    },
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "illegal_level": "mid",
+      "variant": "V3a",
+      "success_rate": 0.5,
+      "ever_stuck_rate": 0.5,
+      "terminal_stuck_rate": 0.5,
+      "assisted_success_rate": 0.0,
+      "unassisted_success_rate": 0.5,
+      "mean_oracle_actions": 21.75,
+      "mean_interventions": 1.5,
+      "mean_reject_rate": 0.19729491326080562,
+      "mean_episode_cost": 3.75,
+      "mean_length": 90.5,
+      "n_episodes": 4.0,
+      "budget": 80.0
+    },
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "illegal_level": "mid",
+      "variant": "V3b",
+      "success_rate": 0.5,
+      "ever_stuck_rate": 0.5,
+      "terminal_stuck_rate": 0.5,
+      "assisted_success_rate": 0.0,
+      "unassisted_success_rate": 0.5,
+      "mean_oracle_actions": 40.0,
+      "mean_interventions": 1.5,
+      "mean_reject_rate": 0.3105610561056106,
+      "mean_episode_cost": 8.75,
+      "mean_length": 122.25,
+      "n_episodes": 4.0,
+      "budget": 80.0
+    },
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "illegal_level": "mid",
+      "variant": "V4",
+      "success_rate": 0.5,
+      "ever_stuck_rate": 0.5,
+      "terminal_stuck_rate": 0.5,
+      "assisted_success_rate": 0.0,
+      "unassisted_success_rate": 0.5,
+      "mean_oracle_actions": 30.0,
+      "mean_interventions": 1.5,
+      "mean_reject_rate": 0.2772486970867234,
+      "mean_episode_cost": 8.75,
+      "mean_length": 108.75,
+      "n_episodes": 4.0,
+      "budget": 80.0
+    }
+  ],
+  "smoke": true
+}

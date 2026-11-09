@@ -1,0 +1,82 @@
+{
+  "config": {
+    "deploy_margin": 0.1,
+    "n_demos": 12,
+    "n_eval": 8,
+    "max_steps": 220,
+    "epochs": 15,
+    "batch_size": 256,
+    "lr": 0.001,
+    "device": "cpu",
+    "stuck_horizon": 30,
+    "seeds": [
+      0
+    ],
+    "illegal_levels": [
+      "mid"
+    ],
+    "modes": [
+      "A",
+      "B",
+      "C"
+    ],
+    "history_options": [
+      false
+    ],
+    "safety_gymnasium_env": "SafetyPointGoal1-v0",
+    "tabletop_stack": "robomimic_lift"
+  },
+  "results": [
+    {
+      "mode": "A",
+      "illegal_level": "mid",
+      "use_history": false,
+      "seed": 0,
+      "demo_margin": 0.05,
+      "deploy_margin": 0.1,
+      "illegal_rate": 0.17110266159695817,
+      "kept_frac": 0.8288973384030418,
+      "demo_success_traj": 12,
+      "success_rate": 1.0,
+      "stuck_rate": 0.0,
+      "mean_reject_rate": 0.10166014780465887,
+      "mean_length": 32.875,
+      "collision_events": 0.0,
+      "n_episodes": 8.0
+    },
+    {
+      "mode": "B",
+      "illegal_level": "mid",
+      "use_history": false,
+      "seed": 0,
+      "demo_margin": 0.05,
+      "deploy_margin": 0.1,
+      "illegal_rate": 0.17110266159695817,
+      "kept_frac": 1.0,
+      "demo_success_traj": 12,
+      "success_rate": 1.0,
+      "stuck_rate": 0.0,
+      "mean_reject_rate": 0.21913407172482013,
+      "mean_length": 32.5,
+      "collision_events": 0.0,
+      "n_episodes": 8.0
+    },
+    {
+      "mode": "C",
+      "illegal_level": "mid",
+      "use_history": false,
+      "seed": 0,
+      "demo_margin": 0.05,
+      "deploy_margin": 0.1,
+      "illegal_rate": 0.17110266159695817,
+      "kept_frac": 1.0,
+      "demo_success_traj": 12,
+      "success_rate": 1.0,
+      "stuck_rate": 0.0,
+      "mean_reject_rate": 0.2055374097838119,
+      "mean_length": 33.0,
+      "collision_events": 0.0,
+      "n_episodes": 8.0
+    }
+  ]
+}

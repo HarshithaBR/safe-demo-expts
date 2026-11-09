@@ -1,0 +1,66 @@
+# --- environments & caches ---
+.venv/
+.venv-*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# micromamba / conda roots (never vendor)
+micromamba/
+**/envs/safe311/
+.conda/
+
+# --- proposal / course-paper authoring (local-only; not part of this experiment repo) ---
+docs/IRL_Proposal*
+docs/COURSE_PROPOSAL*
+docs/course-proposal*
+docs/overleaf*
+docs/heilmeier*
+docs/paper-outline*
+docs/publication-assessment*
+docs/proposal-figs/
+**/*Proposal*.tex
+**/*proposal*.tex
+**/overleaf*.zip
+**/*Proposal*.zip
+**/*proposal*.zip
+docs/**/*.tex
+
+# proposal-generation helpers if added later
+scripts/*proposal*
+scripts/*heilmeier*
+scripts/*overleaf*
+scripts/gen_paper*
+scripts/write_proposal*
+
+# --- ephemeral / large artifacts ---
+*.log
+results/queue/*.lock
+results/queue/*.out
+nohup.out
+
+# Large media (regenerate locally; JSON results stay in repo)
+*.gif
+*.mp4
+*.mov
+media/**/*.png
+results/figures/**/*.png
+results/figures/**/*.gif
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~

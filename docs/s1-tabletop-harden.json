@@ -1,0 +1,460 @@
+{
+  "robot": "Meta-World Sawyer (reach-v3) \u2014 NOT Franka",
+  "config": {
+    "n_demos": 40,
+    "deploy_margin": 0.05,
+    "demo_margin": 0.0,
+    "pillar_radius": 0.08,
+    "eval_seeds": [
+      7,
+      77,
+      177
+    ],
+    "modes": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "demo_meta": {
+    "n_traj": 40,
+    "success_traj": 39,
+    "deploy_z_min": 0.05,
+    "demo_z_min": 0.05,
+    "pillar_xy": [
+      0.0,
+      0.72
+    ],
+    "deploy_pillar_radius": 0.08,
+    "deploy_pillar_margin": 0.05,
+    "demo_pillar_margin": 0.0,
+    "illegal_rate": 0.188042203985932,
+    "seed": 0,
+    "env": "reach-v3"
+  },
+  "results": [
+    {
+      "mode": "A",
+      "shield": "freeze",
+      "kept_frac": 0.811957796014068,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.0,
+      "success_std": 0.0,
+      "stuck_mean": 0.8166666666666668,
+      "stuck_std": 0.04714045207910316,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.85,
+          "terminal_stuck_rate": 0.85,
+          "mean_reject_rate": 0.8545,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.85,
+          "terminal_stuck_rate": 0.85,
+          "mean_reject_rate": 0.8844999999999998,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.75,
+          "terminal_stuck_rate": 0.75,
+          "mean_reject_rate": 0.8017499999999999,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.004297613035305403,
+      "val_mse": 0.004304263275116682,
+      "n_train": 2817,
+      "n_val": 646,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "A",
+      "shield": "escape",
+      "kept_frac": 0.811957796014068,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.0,
+      "success_std": 0.0,
+      "stuck_mean": 0.7833333333333333,
+      "stuck_std": 0.04714045207910316,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.75,
+          "terminal_stuck_rate": 0.75,
+          "mean_reject_rate": 0.7675,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.85,
+          "terminal_stuck_rate": 0.85,
+          "mean_reject_rate": 0.8532499999999998,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.75,
+          "terminal_stuck_rate": 0.75,
+          "mean_reject_rate": 0.80275,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.004297613035305403,
+      "val_mse": 0.004304263275116682,
+      "n_train": 2817,
+      "n_val": 646,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "A",
+      "shield": "mpc",
+      "kept_frac": 0.811957796014068,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.03333333333333333,
+      "success_std": 0.023570226039551587,
+      "stuck_mean": 0.03333333333333333,
+      "stuck_std": 0.023570226039551587,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.05,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.09259734513274336,
+          "mean_length": 195.65,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.05,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.11631679389312977,
+          "mean_length": 196.55,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.0,
+          "ever_stuck_rate": 0.0,
+          "terminal_stuck_rate": 0.0,
+          "mean_reject_rate": 0.10500000000000001,
+          "mean_length": 200.0,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.004297613035305403,
+      "val_mse": 0.004304263275116682,
+      "n_train": 2817,
+      "n_val": 646,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "B",
+      "shield": "freeze",
+      "kept_frac": 1.0,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.43333333333333335,
+      "success_std": 0.10274023338281629,
+      "stuck_mean": 0.21666666666666667,
+      "stuck_std": 0.047140452079103175,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.45,
+          "ever_stuck_rate": 0.25,
+          "terminal_stuck_rate": 0.25,
+          "mean_reject_rate": 0.37419668245453075,
+          "mean_length": 154.9,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.55,
+          "ever_stuck_rate": 0.25,
+          "terminal_stuck_rate": 0.25,
+          "mean_reject_rate": 0.3656982798405087,
+          "mean_length": 144.4,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.3,
+          "ever_stuck_rate": 0.15,
+          "terminal_stuck_rate": 0.15,
+          "mean_reject_rate": 0.30833626655547064,
+          "mean_length": 171.2,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.002154729620087892,
+      "val_mse": 0.00212117750197649,
+      "n_train": 3436,
+      "n_val": 829,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "B",
+      "shield": "escape",
+      "kept_frac": 1.0,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.5499999999999999,
+      "success_std": 0.04082482904638629,
+      "stuck_mean": 0.10000000000000002,
+      "stuck_std": 0.08164965809277261,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.55,
+          "ever_stuck_rate": 0.2,
+          "terminal_stuck_rate": 0.2,
+          "mean_reject_rate": 0.2917853990302081,
+          "mean_length": 143.95,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.5,
+          "ever_stuck_rate": 0.1,
+          "terminal_stuck_rate": 0.1,
+          "mean_reject_rate": 0.24277958077998302,
+          "mean_length": 150.95,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.6,
+          "ever_stuck_rate": 0.0,
+          "terminal_stuck_rate": 0.0,
+          "mean_reject_rate": 0.23347515785119835,
+          "mean_length": 139.15,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.002154729620087892,
+      "val_mse": 0.00212117750197649,
+      "n_train": 3436,
+      "n_val": 829,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "B",
+      "shield": "mpc",
+      "kept_frac": 1.0,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.7666666666666666,
+      "success_std": 0.10274023338281628,
+      "stuck_mean": 0.03333333333333333,
+      "stuck_std": 0.023570226039551587,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.75,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.0581009566523573,
+          "mean_length": 132.9,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.65,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.05578368041898226,
+          "mean_length": 146.95,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.9,
+          "ever_stuck_rate": 0.0,
+          "terminal_stuck_rate": 0.0,
+          "mean_reject_rate": 0.05016925950716069,
+          "mean_length": 127.25,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.002154729620087892,
+      "val_mse": 0.00212117750197649,
+      "n_train": 3436,
+      "n_val": 829,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "C",
+      "shield": "freeze",
+      "kept_frac": 1.0,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.21666666666666667,
+      "success_std": 0.10274023338281627,
+      "stuck_mean": 0.15,
+      "stuck_std": 0.10801234497346433,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.2,
+          "ever_stuck_rate": 0.3,
+          "terminal_stuck_rate": 0.3,
+          "mean_reject_rate": 0.28517697663658625,
+          "mean_length": 180.55,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.35,
+          "ever_stuck_rate": 0.1,
+          "terminal_stuck_rate": 0.1,
+          "mean_reject_rate": 0.2744738669417446,
+          "mean_length": 163.7,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.1,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.28252491408934705,
+          "mean_length": 189.05,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.004031992916549955,
+      "val_mse": 0.003627736819908023,
+      "n_train": 3436,
+      "n_val": 829,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "C",
+      "shield": "escape",
+      "kept_frac": 1.0,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.3,
+      "success_std": 0.08164965809277261,
+      "stuck_mean": 0.08333333333333333,
+      "stuck_std": 0.04714045207910317,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.3,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.23248362775407783,
+          "mean_length": 169.7,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.2,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.1771677526131676,
+          "mean_length": 179.8,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.4,
+          "ever_stuck_rate": 0.15,
+          "terminal_stuck_rate": 0.15,
+          "mean_reject_rate": 0.23182166946714222,
+          "mean_length": 159.85,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.004031992916549955,
+      "val_mse": 0.003627736819908023,
+      "n_train": 3436,
+      "n_val": 829,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    },
+    {
+      "mode": "C",
+      "shield": "mpc",
+      "kept_frac": 1.0,
+      "illegal_rate": 0.188042203985932,
+      "demo_success": 39,
+      "success_mean": 0.2833333333333334,
+      "success_std": 0.11785113019775792,
+      "stuck_mean": 0.08333333333333333,
+      "stuck_std": 0.023570226039551587,
+      "per_seed": [
+        {
+          "seed": 7,
+          "success_rate": 0.2,
+          "ever_stuck_rate": 0.1,
+          "terminal_stuck_rate": 0.1,
+          "mean_reject_rate": 0.08384341227490096,
+          "mean_length": 179.7,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 77,
+          "success_rate": 0.2,
+          "ever_stuck_rate": 0.1,
+          "terminal_stuck_rate": 0.1,
+          "mean_reject_rate": 0.10211118578809145,
+          "mean_length": 178.95,
+          "n_episodes": 20.0
+        },
+        {
+          "seed": 177,
+          "success_rate": 0.45,
+          "ever_stuck_rate": 0.05,
+          "terminal_stuck_rate": 0.05,
+          "mean_reject_rate": 0.08356398445332927,
+          "mean_length": 154.85,
+          "n_episodes": 20.0
+        }
+      ],
+      "train_mse": 0.004031992916549955,
+      "val_mse": 0.003627736819908023,
+      "n_train": 3436,
+      "n_val": 829,
+      "n_train_traj": 32,
+      "n_val_traj": 8,
+      "epochs": 50.0
+    }
+  ]
+}

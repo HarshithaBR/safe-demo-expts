@@ -1,0 +1,240 @@
+{
+  "methods": {
+    "A_nohist": {
+      "freeze": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.75,
+            "terminal_stuck_rate": 0.2,
+            "mean_reject_rate": 0.3241143106338112,
+            "mean_episode_cost": 41.6,
+            "mean_length": 208.8
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.7,
+            "terminal_stuck_rate": 0.3,
+            "mean_reject_rate": 0.30111860663608236,
+            "mean_episode_cost": 68.45,
+            "mean_length": 209.6
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.6,
+            "terminal_stuck_rate": 0.4,
+            "mean_reject_rate": 0.43053119746546076,
+            "mean_episode_cost": 57.65,
+            "mean_length": 257.25
+          }
+        ],
+        "success_rate_mean": 0.6833333333333332,
+        "success_rate_std": 0.062360956446232366,
+        "terminal_stuck_rate_mean": 0.3,
+        "terminal_stuck_rate_std": 0.08164965809277261,
+        "mean_reject_rate_mean": 0.3519213715784515,
+        "mean_reject_rate_std": 0.05637274249775465
+      },
+      "A1a": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.75,
+            "terminal_stuck_rate": 0.2,
+            "mean_reject_rate": 0.18884498526930163,
+            "mean_oracle_actions": 17.15,
+            "mean_episode_cost": 10.65,
+            "mean_length": 111.95
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.75,
+            "terminal_stuck_rate": 0.25,
+            "mean_reject_rate": 0.16123301125091039,
+            "mean_oracle_actions": 12.2,
+            "mean_episode_cost": 7.2,
+            "mean_length": 100.0
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.65,
+            "terminal_stuck_rate": 0.35,
+            "mean_reject_rate": 0.21383941561896305,
+            "mean_oracle_actions": 21.8,
+            "mean_episode_cost": 9.25,
+            "mean_length": 108.7
+          }
+        ],
+        "success_rate_mean": 0.7166666666666667,
+        "success_rate_std": 0.04714045207910316,
+        "terminal_stuck_rate_mean": 0.26666666666666666,
+        "terminal_stuck_rate_std": 0.062360956446232345,
+        "mean_reject_rate_mean": 0.18797247071305834,
+        "mean_reject_rate_std": 0.0214853346319749,
+        "mean_oracle_actions_mean": 17.05,
+        "mean_oracle_actions_std": 3.9198214245039282
+      },
+      "A1b_postft": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.3,
+            "terminal_stuck_rate": 0.6,
+            "mean_reject_rate": 0.07085773890146982,
+            "mean_oracle_actions": 0.0,
+            "mean_episode_cost": 0.0,
+            "mean_length": 103.55,
+            "n_oracle_transitions": 939,
+            "ft_ckpt": "/home/ubuntu/Documents/IRL/project/results/checkpoints_ft/s1_mid_modeA_hist0_ft_bakeoff.pt",
+            "ft_train_mse": 0.021062896093901468,
+            "n_ft_transitions": 4347
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.25,
+            "terminal_stuck_rate": 0.7,
+            "mean_reject_rate": 0.06541730226655393,
+            "mean_oracle_actions": 0.0,
+            "mean_episode_cost": 0.0,
+            "mean_length": 111.1,
+            "n_oracle_transitions": 544,
+            "ft_ckpt": "/home/ubuntu/Documents/IRL/project/results/checkpoints_ft/s1_mid_modeA_hist0_ft_bakeoff.pt",
+            "ft_train_mse": 0.01965899986680597,
+            "n_ft_transitions": 3952
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.25,
+            "terminal_stuck_rate": 0.7,
+            "mean_reject_rate": 0.05928911912195463,
+            "mean_oracle_actions": 0.0,
+            "mean_episode_cost": 0.0,
+            "mean_length": 119.05,
+            "n_oracle_transitions": 546,
+            "ft_ckpt": "/home/ubuntu/Documents/IRL/project/results/checkpoints_ft/s1_mid_modeA_hist0_ft_bakeoff.pt",
+            "ft_train_mse": 0.01883256417931989,
+            "n_ft_transitions": 3954
+          }
+        ],
+        "success_rate_mean": 0.26666666666666666,
+        "success_rate_std": 0.02357022603955158,
+        "terminal_stuck_rate_mean": 0.6666666666666666,
+        "terminal_stuck_rate_std": 0.04714045207910316,
+        "mean_reject_rate_mean": 0.06518805342999279,
+        "mean_reject_rate_std": 0.004725650373055967,
+        "mean_oracle_actions_mean": 0.0,
+        "mean_oracle_actions_std": 0.0
+      },
+      "A2_escape": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.9,
+            "terminal_stuck_rate": 0.05,
+            "mean_reject_rate": 0.20516011889491495,
+            "mean_episode_cost": 11.7,
+            "mean_length": 135.35
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.9,
+            "terminal_stuck_rate": 0.1,
+            "mean_reject_rate": 0.2111837445540103,
+            "mean_episode_cost": 27.15,
+            "mean_length": 138.15
+          },
+          {
+            "seed": 177,
+            "success_rate": 1.0,
+            "terminal_stuck_rate": 0.0,
+            "mean_reject_rate": 0.25630272381657887,
+            "mean_episode_cost": 17.45,
+            "mean_length": 117.95
+          }
+        ],
+        "success_rate_mean": 0.9333333333333332,
+        "success_rate_std": 0.04714045207910316,
+        "terminal_stuck_rate_mean": 0.05000000000000001,
+        "terminal_stuck_rate_std": 0.040824829046386304,
+        "mean_reject_rate_mean": 0.22421552908850137,
+        "mean_reject_rate_std": 0.022821949458922235
+      },
+      "A3_mpc": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.95,
+            "terminal_stuck_rate": 0.0,
+            "mean_reject_rate": 0.2027114934320294,
+            "mean_episode_cost": 13.5,
+            "mean_length": 119.35
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.95,
+            "terminal_stuck_rate": 0.05,
+            "mean_reject_rate": 0.1650190399778641,
+            "mean_episode_cost": 29.9,
+            "mean_length": 136.0
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.9,
+            "terminal_stuck_rate": 0.05,
+            "mean_reject_rate": 0.22309116744560686,
+            "mean_episode_cost": 9.5,
+            "mean_length": 144.9
+          }
+        ],
+        "success_rate_mean": 0.9333333333333332,
+        "success_rate_std": 0.023570226039551553,
+        "terminal_stuck_rate_mean": 0.03333333333333333,
+        "terminal_stuck_rate_std": 0.023570226039551584,
+        "mean_reject_rate_mean": 0.19694056695183346,
+        "mean_reject_rate_std": 0.02405647094494273
+      }
+    }
+  },
+  "config": {
+    "env_id": "SafetyPointGoal1-v0",
+    "deploy_margin": 0.14,
+    "oracle_margin": 0.04,
+    "device": "cpu",
+    "stuck_horizon": 40,
+    "max_steps": 500,
+    "seeds": [
+      7,
+      77,
+      177
+    ],
+    "n_eval": 20,
+    "assist_variant": "V3b",
+    "assist_budget": 40,
+    "max_interventions_per_episode": 5,
+    "v3_disagree_tol": 0.45,
+    "v3_max_steps": 40,
+    "collect_episodes": 40,
+    "collect_seed_base": 21,
+    "ft_epochs": 25,
+    "ft_lr": 0.0005,
+    "mix_original_demos": true,
+    "demo_dir": "data/demos",
+    "escape_mode": true,
+    "mpc_horizon": 3,
+    "mpc_samples": 20,
+    "policies": [
+      {
+        "illegal_level": "mid",
+        "mode": "A",
+        "use_history": false,
+        "tag": "A_nohist"
+      }
+    ]
+  },
+  "smoke": false
+}

@@ -1,0 +1,14 @@
+{
+  "tag": "C_hist",
+  "seed": 177,
+  "method": "A1b_postft",
+  "ft_train_mse": 0.02137323294300586,
+  "ft_epochs": 25.0,
+  "ft_n": 4058.0,
+  "obs_dim": 60,
+  "act_dim": 2,
+  "hidden": 128,
+  "history_extra": 3,
+  "use_history": true,
+  "history": true
+}

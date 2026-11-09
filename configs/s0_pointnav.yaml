@@ -1,0 +1,18 @@
+# S0 PointNav experiment matrix
+deploy_margin: 0.10
+n_demos: 50
+n_eval: 30
+max_steps: 220
+epochs: 50
+batch_size: 256
+lr: 0.001
+device: cpu
+stuck_horizon: 30
+seeds: [0, 1, 2]
+illegal_levels: ["low", "mid", "high"]
+modes: ["A", "B", "C"]   # A=filter-first, B=train-then-constrain, C=projected labels
+history_options: [false, true]
+
+# Optional later hooks (not wired in S0 runner yet)
+safety_gymnasium_env: "SafetyPointGoal1-v0"
+tabletop_stack: "robomimic_lift"

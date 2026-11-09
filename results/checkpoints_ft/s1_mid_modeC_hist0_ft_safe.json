@@ -1,0 +1,12 @@
+{
+  "tag": "C_nohist",
+  "ft_train_mse": 0.14153117686510086,
+  "ft_epochs": 10.0,
+  "ft_n": 465.0,
+  "obs_dim": 60,
+  "act_dim": 2,
+  "hidden": 128,
+  "history_extra": 0,
+  "use_history": false,
+  "history": false
+}

@@ -1,0 +1,28 @@
+env_id: "SafetyPointGoal1-v0"
+deploy_margin: 0.14
+oracle_margin: 0.04
+n_eval: 20
+max_steps: 500
+stuck_horizon: 40
+device: cpu
+seed: 7
+max_interventions_per_episode: 5
+# Freeze deploy so budget–stuck curves are nontrivial (oracle uses escape-exec).
+escape_mode: false
+variants: [V2, V3b, V4]
+budgets: [0, 5, 10, 20, 40, 80]
+v2_n: 10
+v3_max_steps: 40
+v3_disagree_tol: 0.45
+v4_horizon: 20
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+policy_seed: 0
+n_demos: 40
+train_epochs: 60
+smoke_n_eval: 4
+smoke_budgets: [0, 10, 40]
+policies:
+  - {illegal_level: mid, mode: A, use_history: false, tag: A_nohist}
+  - {illegal_level: mid, mode: C, use_history: false, tag: C_nohist}
+  - {illegal_level: mid, mode: C, use_history: true, tag: C_hist}

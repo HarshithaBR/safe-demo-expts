@@ -1,0 +1,29 @@
+env_id: "SafetyPointGoal1-v0"
+deploy_margin: 0.14
+oracle_margin: 0.04
+device: cpu
+stuck_horizon: 40
+max_steps: 500
+seeds: [7, 77, 177]
+n_eval: 12
+policy_tag: C_hist
+layouts: [simple, u_trap, narrow, infeasible]
+prefer_override: true
+layout_scale: 1.0
+methods: [freeze, A2_escape, A3_mpc, A1a]
+assist_variant: V3b
+assist_budget: 40
+max_interventions_per_episode: 5
+v3_disagree_tol: 0.45
+v3_max_steps: 40
+mpc_horizon: 3
+mpc_samples: 20
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+policy_seed: 0
+n_demos: 40
+train_epochs: 60
+smoke_n_eval: 4
+smoke_seeds: [7]
+policies:
+  - {illegal_level: mid, mode: C, use_history: true, tag: C_hist}

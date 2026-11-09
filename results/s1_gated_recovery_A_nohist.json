@@ -1,0 +1,206 @@
+{
+  "methods": {
+    "A_nohist": {
+      "freeze": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.75,
+            "terminal_stuck_rate": 0.2,
+            "mean_reject_rate": 0.3241143106338112,
+            "mean_episode_cost": 41.6,
+            "mean_length": 208.8
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.7,
+            "terminal_stuck_rate": 0.3,
+            "mean_reject_rate": 0.30111860663608236,
+            "mean_episode_cost": 68.45,
+            "mean_length": 209.6
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.6,
+            "terminal_stuck_rate": 0.4,
+            "mean_reject_rate": 0.43053119746546076,
+            "mean_episode_cost": 57.65,
+            "mean_length": 257.25
+          }
+        ],
+        "success_rate_mean": 0.6833333333333332,
+        "success_rate_std": 0.062360956446232366,
+        "terminal_stuck_rate_mean": 0.3,
+        "terminal_stuck_rate_std": 0.08164965809277261,
+        "mean_reject_rate_mean": 0.3519213715784515,
+        "mean_reject_rate_std": 0.05637274249775465
+      },
+      "A1b_naive_ft": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.3,
+            "terminal_stuck_rate": 0.55,
+            "mean_reject_rate": 0.10289067053464954,
+            "mean_episode_cost": 0.0,
+            "mean_length": 144.95,
+            "n_oracle": 939,
+            "ft_train_mse": 0.021062545149641877
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.25,
+            "terminal_stuck_rate": 0.7,
+            "mean_reject_rate": 0.06541730226655393,
+            "mean_episode_cost": 0.0,
+            "mean_length": 111.1,
+            "n_oracle": 544,
+            "ft_train_mse": 0.01965899986680597
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.25,
+            "terminal_stuck_rate": 0.7,
+            "mean_reject_rate": 0.05928911912195463,
+            "mean_episode_cost": 0.0,
+            "mean_length": 119.05,
+            "n_oracle": 546,
+            "ft_train_mse": 0.01883256417931989
+          }
+        ],
+        "success_rate_mean": 0.26666666666666666,
+        "success_rate_std": 0.02357022603955158,
+        "terminal_stuck_rate_mean": 0.65,
+        "terminal_stuck_rate_std": 0.07071067811865471,
+        "mean_reject_rate_mean": 0.07586569730771936,
+        "mean_reject_rate_std": 0.019272615124413486
+      },
+      "A1c_gated_residual": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.7,
+            "terminal_stuck_rate": 0.25,
+            "mean_reject_rate": 0.33426694539344304,
+            "mean_episode_cost": 41.6,
+            "mean_length": 230.6,
+            "n_oracle": 939,
+            "residual_train_mse": 0.03857084456831217,
+            "recon_oracle_mse": 0.03719326792466112,
+            "ckpt": "results/gated_recovery/A_nohist_seed7_gated.pt"
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.7,
+            "terminal_stuck_rate": 0.3,
+            "mean_reject_rate": 0.3030924113622227,
+            "mean_episode_cost": 68.45,
+            "mean_length": 209.75,
+            "n_oracle": 544,
+            "residual_train_mse": 0.04780211548010508,
+            "recon_oracle_mse": 0.054585897326494597,
+            "ckpt": "results/gated_recovery/A_nohist_seed77_gated.pt"
+          },
+          {
+            "seed": 177,
+            "success_rate": 0.65,
+            "terminal_stuck_rate": 0.35,
+            "mean_reject_rate": 0.4258997990785489,
+            "mean_episode_cost": 28.4,
+            "mean_length": 247.55,
+            "n_oracle": 546,
+            "residual_train_mse": 0.05954935401678085,
+            "recon_oracle_mse": 0.05341905325047624,
+            "ckpt": "results/gated_recovery/A_nohist_seed177_gated.pt"
+          }
+        ],
+        "success_rate_mean": 0.6833333333333332,
+        "success_rate_std": 0.023570226039551553,
+        "terminal_stuck_rate_mean": 0.3,
+        "terminal_stuck_rate_std": 0.04082482904638629,
+        "mean_reject_rate_mean": 0.35441971861140487,
+        "mean_reject_rate_std": 0.05212174415544161
+      },
+      "A2_escape": {
+        "n_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 7,
+            "success_rate": 0.9,
+            "terminal_stuck_rate": 0.05,
+            "mean_reject_rate": 0.20516011889491495,
+            "mean_episode_cost": 11.7,
+            "mean_length": 135.35
+          },
+          {
+            "seed": 77,
+            "success_rate": 0.9,
+            "terminal_stuck_rate": 0.1,
+            "mean_reject_rate": 0.2111837445540103,
+            "mean_episode_cost": 27.15,
+            "mean_length": 138.15
+          },
+          {
+            "seed": 177,
+            "success_rate": 1.0,
+            "terminal_stuck_rate": 0.0,
+            "mean_reject_rate": 0.25630272381657887,
+            "mean_episode_cost": 17.45,
+            "mean_length": 117.95
+          }
+        ],
+        "success_rate_mean": 0.9333333333333332,
+        "success_rate_std": 0.04714045207910316,
+        "terminal_stuck_rate_mean": 0.05000000000000001,
+        "terminal_stuck_rate_std": 0.040824829046386304,
+        "mean_reject_rate_mean": 0.22421552908850137,
+        "mean_reject_rate_std": 0.022821949458922235
+      }
+    }
+  },
+  "config": {
+    "env_id": "SafetyPointGoal1-v0",
+    "deploy_margin": 0.14,
+    "oracle_margin": 0.04,
+    "device": "cpu",
+    "stuck_horizon": 40,
+    "max_steps": 500,
+    "seeds": [
+      7,
+      77,
+      177
+    ],
+    "n_eval": 20,
+    "assist_variant": "V3b",
+    "assist_budget": 40,
+    "max_interventions_per_episode": 5,
+    "v3_disagree_tol": 0.45,
+    "v3_max_steps": 40,
+    "collect_episodes": 40,
+    "collect_seed_base": 21,
+    "demo_dir": "data/demos",
+    "ft_epochs": 25,
+    "ft_lr": 0.0005,
+    "residual_epochs": 40,
+    "residual_lr": 0.001,
+    "residual_hidden": 64,
+    "recovery_horizon": 40,
+    "artifact_dir": "results/gated_recovery",
+    "smoke_n_eval": 8,
+    "smoke_collect_episodes": 16,
+    "smoke_ft_epochs": 8,
+    "smoke_residual_epochs": 25,
+    "policies": [
+      {
+        "illegal_level": "mid",
+        "mode": "A",
+        "use_history": false,
+        "tag": "A_nohist"
+      }
+    ]
+  },
+  "smoke": false
+}

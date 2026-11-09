@@ -1,0 +1,228 @@
+{
+  "config": {
+    "env_id": "SafetyPointGoal1-v0",
+    "deploy_margin": 0.14,
+    "oracle_margin": 0.04,
+    "device": "cpu",
+    "stuck_horizon": 40,
+    "max_steps": 500,
+    "collect_variant": "V3b",
+    "collect_budget": 40,
+    "collect_episodes": 40,
+    "collect_seed": 21,
+    "max_interventions_per_episode": 5,
+    "escape_mode": false,
+    "ft_epochs": 25,
+    "ft_lr": 0.0005,
+    "mix_original_demos": true,
+    "safe_ft_lr": 0.0001,
+    "safe_ft_epochs": 10,
+    "demo_dir": "data/demos",
+    "checkpoint_dir": "results/checkpoints",
+    "ft_checkpoint_dir": "results/checkpoints_ft",
+    "policy_seed": 0,
+    "n_demos": 40,
+    "train_epochs": 60,
+    "n_eval": 20,
+    "eval_seed": 77,
+    "v3_disagree_tol": 0.45,
+    "v3_max_steps": 40,
+    "smoke_n_eval": 4,
+    "smoke_collect_episodes": 8,
+    "smoke_ft_epochs": 5,
+    "policies": [
+      {
+        "illegal_level": "mid",
+        "mode": "A",
+        "use_history": false,
+        "tag": "A_nohist"
+      },
+      {
+        "illegal_level": "mid",
+        "mode": "C",
+        "use_history": false,
+        "tag": "C_nohist"
+      },
+      {
+        "illegal_level": "mid",
+        "mode": "C",
+        "use_history": true,
+        "tag": "C_hist"
+      }
+    ]
+  },
+  "results": [
+    {
+      "tag": "A_nohist",
+      "mode": "A",
+      "use_history": false,
+      "n_oracle_transitions": 470,
+      "ft_stats": {
+        "ft_train_mse": 0.01185205765068531,
+        "ft_epochs": 25.0,
+        "ft_n": 3011.0
+      },
+      "ft_ckpt": "/home/ubuntu/Documents/IRL/project/results/checkpoints_ft/s1_mid_modeA_hist0_ft_minidagger.pt",
+      "base_auto": {
+        "success_rate": 0.45,
+        "ever_stuck_rate": 0.5,
+        "terminal_stuck_rate": 0.5,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.45,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.40061895683682636,
+        "mean_episode_cost": 32.9,
+        "mean_length": 171.85,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "base_assist": {
+        "success_rate": 0.8,
+        "ever_stuck_rate": 0.5,
+        "terminal_stuck_rate": 0.15,
+        "assisted_success_rate": 0.35,
+        "unassisted_success_rate": 0.45,
+        "mean_oracle_actions": 14.8,
+        "mean_interventions": 0.5,
+        "mean_reject_rate": 0.3951585387638538,
+        "mean_episode_cost": 35.65,
+        "mean_length": 202.1,
+        "n_episodes": 20.0,
+        "variant": "V3b",
+        "budget": 40.0
+      },
+      "ft_auto": {
+        "success_rate": 0.45,
+        "ever_stuck_rate": 0.4,
+        "terminal_stuck_rate": 0.4,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.45,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.3207351956154897,
+        "mean_episode_cost": 26.2,
+        "mean_length": 229.2,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      }
+    },
+    {
+      "tag": "C_nohist",
+      "mode": "C",
+      "use_history": false,
+      "n_oracle_transitions": 465,
+      "ft_stats": {
+        "ft_train_mse": 0.0254276511259377,
+        "ft_epochs": 25.0,
+        "ft_n": 3920.0
+      },
+      "ft_ckpt": "/home/ubuntu/Documents/IRL/project/results/checkpoints_ft/s1_mid_modeC_hist0_ft_minidagger.pt",
+      "base_auto": {
+        "success_rate": 0.55,
+        "ever_stuck_rate": 0.4,
+        "terminal_stuck_rate": 0.4,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.55,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.33917262003710336,
+        "mean_episode_cost": 27.15,
+        "mean_length": 156.2,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "base_assist": {
+        "success_rate": 0.9,
+        "ever_stuck_rate": 0.4,
+        "terminal_stuck_rate": 0.05,
+        "assisted_success_rate": 0.35,
+        "unassisted_success_rate": 0.55,
+        "mean_oracle_actions": 9.8,
+        "mean_interventions": 0.4,
+        "mean_reject_rate": 0.3077833081748794,
+        "mean_episode_cost": 32.65,
+        "mean_length": 189.3,
+        "n_episodes": 20.0,
+        "variant": "V3b",
+        "budget": 40.0
+      },
+      "ft_auto": {
+        "success_rate": 0.55,
+        "ever_stuck_rate": 0.35,
+        "terminal_stuck_rate": 0.35,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.55,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.3295891926407375,
+        "mean_episode_cost": 34.65,
+        "mean_length": 185.1,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      }
+    },
+    {
+      "tag": "C_hist",
+      "mode": "C",
+      "use_history": true,
+      "n_oracle_transitions": 393,
+      "ft_stats": {
+        "ft_train_mse": 0.01664177601924166,
+        "ft_epochs": 25.0,
+        "ft_n": 3848.0
+      },
+      "ft_ckpt": "/home/ubuntu/Documents/IRL/project/results/checkpoints_ft/s1_mid_modeC_hist1_ft_minidagger.pt",
+      "base_auto": {
+        "success_rate": 0.6,
+        "ever_stuck_rate": 0.4,
+        "terminal_stuck_rate": 0.4,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.6,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.35587822218087956,
+        "mean_episode_cost": 30.75,
+        "mean_length": 150.5,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      },
+      "base_assist": {
+        "success_rate": 0.9,
+        "ever_stuck_rate": 0.4,
+        "terminal_stuck_rate": 0.1,
+        "assisted_success_rate": 0.3,
+        "unassisted_success_rate": 0.6,
+        "mean_oracle_actions": 10.0,
+        "mean_interventions": 0.4,
+        "mean_reject_rate": 0.3411400620143282,
+        "mean_episode_cost": 33.4,
+        "mean_length": 177.7,
+        "n_episodes": 20.0,
+        "variant": "V3b",
+        "budget": 40.0
+      },
+      "ft_auto": {
+        "success_rate": 0.6,
+        "ever_stuck_rate": 0.4,
+        "terminal_stuck_rate": 0.4,
+        "assisted_success_rate": 0.0,
+        "unassisted_success_rate": 0.6,
+        "mean_oracle_actions": 0.0,
+        "mean_interventions": 0.0,
+        "mean_reject_rate": 0.35073751293411176,
+        "mean_episode_cost": 20.3,
+        "mean_length": 145.55,
+        "n_episodes": 20.0,
+        "variant": "none",
+        "budget": 0.0
+      }
+    }
+  ],
+  "smoke": false
+}

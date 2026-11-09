@@ -1,0 +1,26 @@
+env_id: "SafetyPointGoal1-v0"
+deploy_margin: 0.14
+n_eval: 20
+max_steps: 500
+stuck_horizon: 40
+device: cpu
+seeds: [7, 77, 177]
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+policy_seed: 0
+n_demos: 40
+train_epochs: 60
+shield_modes:
+  - {name: freeze, cls: escape, kwargs: {escape_mode: false}}
+  - {name: escape, cls: escape, kwargs: {escape_mode: true}}
+  - {name: mpc_h3_s20, cls: mpc, kwargs: {horizon: 3, n_samples: 20}}
+mpc_horizons: [1, 2, 3, 5]
+mpc_samples: [8, 20, 40]
+mpc_horizon_fixed_n: 20
+mpc_samples_fixed_h: 3
+smoke_n_eval: 4
+smoke_seeds: [7]
+policies:
+  - {illegal_level: mid, mode: A, use_history: false, tag: A_nohist}
+  - {illegal_level: mid, mode: C, use_history: false, tag: C_nohist}
+  - {illegal_level: mid, mode: C, use_history: true, tag: C_hist}

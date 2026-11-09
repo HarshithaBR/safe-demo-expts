@@ -1,0 +1,27 @@
+# Soft z_min mismatch probe (no illegal pillar margin gap)
+robot: "Meta-World Sawyer (reach-v3) — NOT Franka"
+env_name: "reach-v3"
+n_demos: 40
+n_eval: 20
+max_steps: 200
+epochs: 40
+batch_size: 256
+lr: 0.001
+device: cpu
+stuck_horizon: 40
+val_frac: 0.2
+demo_margin: 0.0
+deploy_margin: 0.0
+demo_z_min: 0.06
+deploy_z_min: 0.12
+pillar_xy: [0.0, 0.72]
+pillar_radius: 0.08
+modes: ["A", "B", "C"]
+shields: ["freeze", "escape", "mpc"]
+eval_seeds: [7]
+demo_seed: 0
+mpc_horizon: 3
+mpc_samples: 24
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+require_success: false

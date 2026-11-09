@@ -1,0 +1,28 @@
+# S1 Meta-World Sawyer reach-v3 illegal-demo harden
+# demo_margin=0.0 vs deploy_margin=0.05 → illegal_rate≈0.19
+robot: "Meta-World Sawyer (reach-v3) — NOT Franka"
+env_name: "reach-v3"
+n_demos: 40
+n_eval: 20
+max_steps: 200
+epochs: 50
+batch_size: 256
+lr: 0.001
+device: cpu
+stuck_horizon: 40
+val_frac: 0.2
+demo_margin: 0.0
+deploy_margin: 0.05
+demo_z_min: 0.05
+deploy_z_min: 0.05
+pillar_xy: [0.0, 0.72]
+pillar_radius: 0.08
+modes: ["A", "B", "C"]
+shields: ["freeze", "escape", "mpc"]
+eval_seeds: [7, 77, 177]
+demo_seed: 0
+mpc_horizon: 3
+mpc_samples: 24
+demo_dir: "data/demos"
+checkpoint_dir: "results/checkpoints"
+require_success: false

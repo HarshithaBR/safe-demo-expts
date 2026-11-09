@@ -1,0 +1,17 @@
+# Core (S0 works with these alone)
+numpy>=1.23,<1.25
+torch>=2.0
+gymnasium>=0.28,<0.29
+pyyaml>=6.0
+matplotlib>=3.7
+tqdm>=4.65
+
+# S1 Safety-Gymnasium stack is installed by scripts/setup.sh with pins:
+#   numpy==1.23.5 gymnasium==0.28.1 mujoco==2.3.3
+#   safety-gymnasium==1.0.0 gymnasium-robotics==1.2.2
+# Set SKIP_SAFETY_GYM=1 when running setup.sh for S0-only.
+
+# Optional tabletop (separate env — see docs/MAC_SETUP.md / docs/tabletop.md)
+# robosuite
+# robomimic
+# metaworld
